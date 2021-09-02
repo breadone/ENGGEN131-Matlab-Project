@@ -1,5 +1,5 @@
 function patterns = CreatePatterns
-% literally what do i even write this is so self explanatory
+% creates a cell array of patterns to be used in key generation
 % no input
 % outputs: 1x6 cell array of all possible patterns possible in a 2x2 b&w
 % image

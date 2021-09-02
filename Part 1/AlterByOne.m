@@ -3,6 +3,6 @@ function newUInt = AlterByOne(oldUInt)
 % then it returns 254, else it returns the input value plus one
 % input: a UInt8
 % output: another UInt8
-% Author: breadone
+% Author: Pradyun Setti
     if oldUInt == 255; newUInt = 254; else; newUInt = oldUInt + 1;
 end

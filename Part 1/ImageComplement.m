@@ -2,7 +2,7 @@ function image = ImageComplement(image)
 % function that returns the complement of a black and white image
 % input: a black and white image
 % output: the image that has been inverted
-
+% Author: Pradyun Setti
 %   gets the size of the image
     [rows, col, colour] = size(image);
     
