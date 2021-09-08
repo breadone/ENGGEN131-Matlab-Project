@@ -4,5 +4,10 @@ function newUInt = AlterByOne(oldUInt)
 % input: a UInt8
 % output: another UInt8
 % Author: Pradyun Setti
-    if oldUInt == 255; newUInt = 254; else; newUInt = oldUInt + 1;
+
+    if oldUInt == 255
+        newUInt = uint8(254);
+    else
+        newUInt = uint8(oldUInt + 1);
+    end
 end
