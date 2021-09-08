@@ -1,5 +1,5 @@
 function image = PatternsToImage(patterns)
-    % takes an array of pattern uints and turns them into one bigboi image
+    % takes an array of pattern uints and arranges them into one image
     % input: MxN array of 4x4 uint8 patterns
     % output: one uint8 array (image), of the patterns assembled
     % author: Pradyun Setti
