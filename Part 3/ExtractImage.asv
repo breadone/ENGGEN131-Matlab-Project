@@ -1,0 +1,13 @@
+function bwImage = ExtractImage(rgbImage)
+% extracts a black and white image from a colour image, reversing
+% EmbedImage()
+% input:
+%   - rgb image that contains a hidden bw image
+% output:
+%   - greyscale image that was hidden in the rgb image
+% author: Pradyun Setti
+
+isEven = @
+
+
+end
