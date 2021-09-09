@@ -10,9 +10,6 @@ function decryptedImage = DecryptImage(cipherImage, keyImage)
 % get dimension of image
 [row, col] = size(cipherImage);
 
-% helper funcs, takes in an int and returns true if its == 0
-% isBlack = @(n) n == 0;
-
 % funcs that return a value of logical 1 if either/both of its inputs, a or b,
 % are equal to 0
 oneBlack = @(a, b) a == 0 || b == 0;
@@ -24,27 +21,16 @@ for i = 1:row
       % variables
       cipherPixel = cipherImage(i, j); 
       keyPixel = keyImage(i, j);
-      
-%       if isBlack(cipherPixel)
-%           if isBlack(keyPixel)
-%               decryptedImage(i, j) = 255;
-%           else
-%               decryptedImage(i, j) = 0;
-%           end
-%       else
-%           if isBlack(keyPixel)
-%               decryptedImage(i, j) = 0;
-%           else
-%               decryptedImage(i, j) = 255;
-%           end
-%       end
 
         if bothBlack(cipherPixel, keyPixel)
-            decryptedImage(i, j) = 255;
+            % need to have bothBlack at the start so we know that both are
+            % black, since oneBlack(a, b) would also give true if both are
+            % black
+            decryptedImage(i, j) = 255; % if both pixels are black, set white
         elseif oneBlack(cipherPixel, keyPixel)
-            decryptedImage(i, j) = 0;
+            decryptedImage(i, j) = 0; % if either pixel is black, set black
         else
-            decryptedImage(i, j) = 255;
+            decryptedImage(i, j) = 255; % if neither are black set white
         end
       
    end

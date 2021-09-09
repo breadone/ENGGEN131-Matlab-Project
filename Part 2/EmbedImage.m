@@ -7,7 +7,7 @@ function rgbImage = EmbedImage(bwImage, rgbImage)
 %   - RGB img that contains a hidden greyscale img
 % author: Pradyun Setti
 
-% helper func to determine if a number (or sum of array of nums) is even
+% func to determine if a number (or sum of array of nums) is even
 evenSum = @(n) mod(sum(n), 2) == 0;
 [rows, col, ~] = size(bwImage);
 
