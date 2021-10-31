@@ -5,9 +5,9 @@ function newUInt = AlterByOne(oldUInt)
 % output: another UInt8
 % Author: Pradyun Setti
 
-    if oldUInt == 255
-        newUInt = uint8(254);
-    else
-        newUInt = uint8(oldUInt + 1);
+    if oldUInt == 255 % IF ITS FUCKING 255
+        newUInt = uint8(254); % FUCKING MAKE IT 254
+    else % ELSE
+        newUInt = uint8(oldUInt + 1); % MAKE IT THE FUCKING OLD ONE PLUS ONE
     end
 end
